@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; //this was imported after the statusbar came in
+import 'package:flutter/services.dart';
+
+import 'onboard_page.dart'; //this was imported after the statusbar came in
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -97,7 +99,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: ElevatedButton(
                     onPressed: () {
-                      // Add your onPressed action here
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MyOnboardPage(
+                                  title: 'Onboard',
+                                )),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white,
