@@ -6,10 +6,7 @@ class MyIntroPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
-      child: const Text("Find amazing experiences  anytime, anywhere")
-
-
-    );
+        color: Colors.yellow,
+        child: const Text("Find amazing experiences  anytime, anywhere"));
   }
 }
