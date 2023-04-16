@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
               //used .only  to add padding to the bottom edge  to move it away from the bottom of the screen and create some space between the text and the centered button.
               padding: const EdgeInsets.only(
                 left: 16.0,
-                bottom: 16.0,
+                bottom: 100.0,
               ),
 
               child: Column(
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'Lets make',
                     style: TextStyle(
-                      fontSize: 35.0,
+                      fontSize: 50.0,
                       fontWeight: FontWeight.normal,
                       fontFamily: 'Montserrat',
                       color: Colors.white,
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'your dream',
                     style: TextStyle(
-                      fontSize: 35.0,
+                      fontSize: 50.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Montserrat',
                       color: Colors.white,
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'a vacation',
                     style: TextStyle(
-                      fontSize: 35.0,
+                      fontSize: 50.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Montserrat',
                       color: Colors.white,
@@ -88,8 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
 
           //for the button that is centered
-          Align(
-            alignment: Alignment.bottomCenter,
+          Center(
               child: Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 32.0,
