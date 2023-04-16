@@ -87,8 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
 
-          //for the button that is centered
-          Center(
+          //for the button that is centered at the bottom
+          Align(
+              alignment: Alignment.bottomCenter,
               child: Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 32.0,
